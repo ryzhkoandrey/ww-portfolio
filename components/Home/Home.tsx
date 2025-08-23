@@ -1,4 +1,5 @@
 import Hero from './Hero/Hero';
+import Resume from './Resume/Resume';
 import Services from './Services/Services';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
       <div className="overflow-hidden">
          <Hero />
          <Services />
+         <Resume />
       </div>
    );
 };
