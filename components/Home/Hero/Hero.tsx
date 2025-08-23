@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { BsArrowRight } from 'react-icons/bs';
 import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
@@ -43,6 +44,15 @@ const Hero = () => {
                   />
                </span>
             </h2>
+
+            {/* BUTTON */}
+            <button
+               className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all
+               duration-300 cursor-pointer rounded-full text-lg font-medium"
+            >
+               <span>See my work</span>
+               <BsArrowRight className="w-5 h-5 ml-2 inline-block" />
+            </button>
          </div>
       </div>
    );
