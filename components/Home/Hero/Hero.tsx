@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { BsArrowRight } from 'react-icons/bs';
 import Typewriter from 'typewriter-effect';
-import ParticlesBackground from './ParticleBackground';
+import ParticlesBackground from './ParticlesBackground';
 
 const Hero = () => {
    return (
