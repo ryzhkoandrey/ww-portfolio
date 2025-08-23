@@ -1,5 +1,6 @@
 import { NavLinks } from '@/constant/constant';
 import Link from 'next/link';
+import { BiDownload } from 'react-icons/bi';
 import { FaCode } from 'react-icons/fa';
 
 const Nav = () => {
@@ -28,6 +29,19 @@ const Nav = () => {
                      {link.label}
                   </Link>
                ))}
+            </div>
+
+            {/* BUTTONS */}
+            <div className="flex items-center gap-4">
+               {/* DOWNLOAD CV */}
+               <button
+                  className="px-8 py-3.5 text-sm cursor-pointer rounded-lg
+                  bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white
+                  flex items-center gap-2"
+               >
+                  <BiDownload className="w-5 h-5" />
+                  <span>Download CV</span>
+               </button>
             </div>
          </div>
       </div>
