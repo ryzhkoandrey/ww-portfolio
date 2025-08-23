@@ -7,7 +7,11 @@ import { FaCode } from 'react-icons/fa';
 import { HiBars3BottomRight } from 'react-icons/hi2';
 import { useEffect, useState } from 'react';
 
-const Nav = () => {
+type Props = {
+   openNav: () => void;
+};
+
+const Nav = ({ openNav }: Props) => {
    const [navBg, setNavBg] = useState(false);
 
    useEffect(() => {
@@ -64,7 +68,7 @@ const Nav = () => {
                </button>
 
                {/* BURGER MENU */}
-               <button className="lg:hidden cursor-pointer">
+               <button className="lg:hidden cursor-pointer" onClick={openNav}>
                   <HiBars3BottomRight className="w-8 h-8 text-white" />
                </button>
             </div>
