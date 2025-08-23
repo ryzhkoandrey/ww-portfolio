@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
    return (
@@ -19,6 +22,27 @@ const Hero = () => {
                Creating web products, <br />
                brands, <span className="text-cyan-200">and experiences.</span>
             </h1>
+
+            {/* SUBTITLE */}
+            <h2 className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center">
+               Hi! I&apos;m Sajal - A Passionate
+               <span className="text-cyan-200 font-bold">
+                  <Typewriter
+                     options={{
+                        strings: [
+                           'Frontend Developer',
+                           'Backend Developer',
+                           'Web Developer',
+                        ],
+                        autoStart: true,
+                        loop: true,
+                        delay: 75,
+                        deleteSpeed: 50,
+                        wrapperClassName: 'pl-2',
+                     }}
+                  />
+               </span>
+            </h2>
          </div>
       </div>
    );
