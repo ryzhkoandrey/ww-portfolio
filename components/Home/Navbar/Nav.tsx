@@ -2,11 +2,12 @@ import { NavLinks } from '@/constant/constant';
 import Link from 'next/link';
 import { BiDownload } from 'react-icons/bi';
 import { FaCode } from 'react-icons/fa';
+import { HiBars3BottomRight } from 'react-icons/hi2';
 
 const Nav = () => {
    return (
       <div className="transition-all duration-200 h-[12vh] z-[10000] fixed w-full">
-         <div className="flex items-center h-full justify-between w-[90%] mx-auto">
+         <div className="flex items-center h-full justify-between w-[90%] mx-auto gap-4">
             {/* LOGO */}
             <div className="flex items-center gap-2">
                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-col">
@@ -18,7 +19,7 @@ const Nav = () => {
             </div>
 
             {/* NAV LINKS */}
-            <div className="hidden lg:flex items-center gap-10">
+            <div className="hidden lg:flex items-center gap-6 xl:gap-10">
                {NavLinks.map((link) => (
                   <Link
                      key={link.id}
@@ -41,6 +42,11 @@ const Nav = () => {
                >
                   <BiDownload className="w-5 h-5" />
                   <span>Download CV</span>
+               </button>
+
+               {/* BURGER MENU */}
+               <button className="lg:hidden cursor-pointer">
+                  <HiBars3BottomRight className="w-8 h-8 text-white" />
                </button>
             </div>
          </div>
