@@ -7,7 +7,10 @@ import ParticlesBackground from './ParticlesBackground';
 
 const Hero = () => {
    return (
-      <div className="relative h-screen flex items-center justify-center text-white overflow-hidden flex-col">
+      <div
+         className="relative h-screen flex items-center justify-center
+         text-white overflow-hidden flex-col"
+      >
          {/* PARTICLES BACKGROUND */}
          <ParticlesBackground />
 

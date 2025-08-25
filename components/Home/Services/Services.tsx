@@ -2,7 +2,7 @@ import ServiceCard from './ServiceCard';
 
 const Services = () => {
    return (
-      <div className="py-16">
+      <div id="services" className="py-16 scroll-mt-20">
          {/* TITLE */}
          <h2 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
             Colleborate with brand <br />

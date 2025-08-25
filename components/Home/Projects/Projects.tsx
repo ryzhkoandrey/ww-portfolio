@@ -1,36 +1,36 @@
 import Image from 'next/image';
 
-const Projects = () => {
-   // PROJECTS DATA
-   const projectsData = [
-      {
-         id: 1,
-         img: '/images/p1.jpg',
-         title: 'Modern Finance Dashboard UI',
-         categories: 'Apps, UI/UX',
-      },
-      {
-         id: 2,
-         img: '/images/p2.jpg',
-         title: 'Portfolio Website for Creatives',
-         categories: 'Bradning, Motion',
-      },
-      {
-         id: 3,
-         img: '/images/p3.jpg',
-         title: 'Brand Identity for Startups',
-         categories: 'Branding, UI/UX',
-      },
-      {
-         id: 4,
-         img: '/images/p4.jpg',
-         title: 'SaaS Dashboard Development',
-         categories: 'Apps, UI/UX',
-      },
-   ];
+// PROJECTS DATA
+const projectsData = [
+   {
+      id: 1,
+      img: '/images/p1.jpg',
+      title: 'Modern Finance Dashboard UI',
+      categories: 'Apps, UI/UX',
+   },
+   {
+      id: 2,
+      img: '/images/p2.jpg',
+      title: 'Portfolio Website for Creatives',
+      categories: 'Bradning, Motion',
+   },
+   {
+      id: 3,
+      img: '/images/p3.jpg',
+      title: 'Brand Identity for Startups',
+      categories: 'Branding, UI/UX',
+   },
+   {
+      id: 4,
+      img: '/images/p4.jpg',
+      title: 'SaaS Dashboard Development',
+      categories: 'Apps, UI/UX',
+   },
+];
 
+const Projects = () => {
    return (
-      <div className="py-16">
+      <div id="works" className="py-16 scroll-mt-20">
          {/* TITLE */}
          <h2 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
             A small selection of recent <br />

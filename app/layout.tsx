@@ -19,7 +19,7 @@ export default function RootLayout({
    children: React.ReactNode;
 }>) {
    return (
-      <html lang="en">
+      <html lang="en" className="scroll-smooth">
          <body className={`${font.className} antialiased bg-[#0d0d1f]`}>
             <ResponsiveNav />
             {children}
