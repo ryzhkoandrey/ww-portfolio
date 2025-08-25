@@ -54,7 +54,7 @@ const Skills = () => {
 
          {/* SKILLS */}
          <div className="flex flex-wrap justify-center gap-6 mt-16">
-            {skillsData.map((skill) => (
+            {skillsData.map((skill, index) => (
                <Tilt
                   key={skill.name}
                   scale={1.5}
@@ -62,6 +62,9 @@ const Skills = () => {
                   transitionSpeed={400}
                >
                   <div
+                     data-aos="flip-right"
+                     data-aos-anchor-placement="top-center"
+                     data-aos-delay={index * 100}
                      className="bg-[#14134145] text-center w-40 h-48 rounded-3xl flex flex-col 
                      items-center justify-center shadow-lg transition hover:scale-105"
                   >

@@ -14,22 +14,36 @@ const Blog = () => {
             items-center mt-16"
          >
             {/* POST 1 */}
-            <BlogCard
-               image="/images/b1.jpg"
-               title="Learn how to build an amazing portfolio website using next js"
-            />
+            <div data-aos="fade-right" data-aos-anchor-placement="top-center">
+               <BlogCard
+                  image="/images/b1.jpg"
+                  title="Learn how to build an amazing portfolio website using next js"
+               />
+            </div>
 
             {/* POST 2 */}
-            <BlogCard
-               image="/images/b2.jpg"
-               title="Learn how to build an amazing portfolio website using next js"
-            />
+            <div
+               data-aos="fade-right"
+               data-aos-anchor-placement="top-center"
+               data-aos-delay="100"
+            >
+               <BlogCard
+                  image="/images/b2.jpg"
+                  title="Learn how to build an amazing portfolio website using next js"
+               />
+            </div>
 
             {/* POST 3 */}
-            <BlogCard
-               image="/images/b3.jpg"
-               title="Learn how to build an amazing portfolio website using next js"
-            />
+            <div
+               data-aos="fade-right"
+               data-aos-anchor-placement="top-center"
+               data-aos-delay="200"
+            >
+               <BlogCard
+                  image="/images/b3.jpg"
+                  title="Learn how to build an amazing portfolio website using next js"
+               />
+            </div>
          </div>
       </div>
    );

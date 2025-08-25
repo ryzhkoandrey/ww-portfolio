@@ -1,33 +1,5 @@
 import Image from 'next/image';
 
-// PROJECTS DATA
-const projectsData = [
-   {
-      id: 1,
-      img: '/images/p1.jpg',
-      title: 'Modern Finance Dashboard UI',
-      categories: 'Apps, UI/UX',
-   },
-   {
-      id: 2,
-      img: '/images/p2.jpg',
-      title: 'Portfolio Website for Creatives',
-      categories: 'Bradning, Motion',
-   },
-   {
-      id: 3,
-      img: '/images/p3.jpg',
-      title: 'Brand Identity for Startups',
-      categories: 'Branding, UI/UX',
-   },
-   {
-      id: 4,
-      img: '/images/p4.jpg',
-      title: 'SaaS Dashboard Development',
-      categories: 'Apps, UI/UX',
-   },
-];
-
 const Projects = () => {
    return (
       <div id="works" className="py-16 scroll-mt-20">
@@ -39,26 +11,85 @@ const Projects = () => {
 
          {/* PROJECTS */}
          <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
-            {projectsData.map(({ id, img, title, categories }) => (
-               <div key={id}>
-                  {/* PROJECT IMAGE */}
-                  <Image
-                     src={img}
-                     width={800}
-                     height={650}
-                     alt="img"
-                     className="rounded-lg"
-                  />
+            {/* PROJECT 1 */}
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+               <Image
+                  src="/images/p1.jpg"
+                  width={800}
+                  height={650}
+                  alt="img"
+                  className="rounded-lg"
+               />
 
-                  {/* PROJECT TITLE */}
-                  <h3 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
-                     {title}
-                  </h3>
+               <h3 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+                  Modern Finance Dashboard UI
+               </h3>
 
-                  {/* PROJECT CATEGORIES */}
-                  <p className="pt-2 font-medium text-white/80">{categories}</p>
-               </div>
-            ))}
+               <p className="pt-2 font-medium text-white/80">Apps, UI/UX</p>
+            </div>
+
+            {/* PROJECT 2 */}
+            <div
+               data-aos="fade-up"
+               data-aos-anchor-placement="top-center"
+               data-aos-delay="100"
+            >
+               <Image
+                  src="/images/p2.jpg"
+                  width={800}
+                  height={650}
+                  alt="img"
+                  className="rounded-lg"
+               />
+
+               <h3 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+                  Portfolio Website for Creatives
+               </h3>
+
+               <p className="pt-2 font-medium text-white/80">Bradning, Motion</p>
+            </div>
+
+            {/* PROJECT 3 */}
+            <div
+               data-aos="fade-up"
+               data-aos-anchor-placement="top-center"
+               data-aos-delay="200"
+            >
+               <Image
+                  src="/images/p3.jpg"
+                  width={800}
+                  height={650}
+                  alt="img"
+                  className="rounded-lg"
+               />
+
+               <h3 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+                  Brand Identity for Startups
+               </h3>
+
+               <p className="pt-2 font-medium text-white/80">Branding, UI/UX</p>
+            </div>
+
+            {/* PROJECT 4 */}
+            <div
+               data-aos="fade-up"
+               data-aos-anchor-placement="top-center"
+               data-aos-delay="300"
+            >
+               <Image
+                  src="/images/p4.jpg"
+                  width={800}
+                  height={650}
+                  alt="img"
+                  className="rounded-lg"
+               />
+
+               <h3 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+                  SaaS Dashboard Development
+               </h3>
+
+               <p className="pt-2 font-medium text-white/80">Apps, UI/UX</p>
+            </div>
          </div>
       </div>
    );
