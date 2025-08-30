@@ -68,7 +68,11 @@ const Nav = ({ openNav }: Props) => {
                </button>
 
                {/* BURGER MENU */}
-               <button className="lg:hidden cursor-pointer" onClick={openNav}>
+               <button
+                  className="lg:hidden cursor-pointer"
+                  onClick={openNav}
+                  aria-label="Open menu"
+               >
                   <HiBars3BottomRight className="w-8 h-8 text-white" />
                </button>
             </div>
