@@ -41,6 +41,7 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
             {/* CLOSE */}
             <button
                onClick={closeNav}
+               aria-label="Close menu"
                className="absolute top-[0.7rem] right-[1.4rem] cursor-pointer"
             >
                <CgClose className="sm:w-8 sm:h-8 w-6 h-6" />
